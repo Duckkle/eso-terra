@@ -568,6 +568,31 @@ var _bootstrapVueCss = require("bootstrap-vue/dist/bootstrap-vue.css");
 (0, _vueDefault.default).use((0, _bootstrapVue.BootstrapVue));
 // Optionally install the BootstrapVue icon components plugin
 (0, _vueDefault.default).use((0, _bootstrapVue.IconsPlugin));
+window.onload = ()=>{
+    new (0, _vueDefault.default)({
+        el: "#app",
+        data () {
+            return {
+                name: "BootstrapVue",
+                show: true
+            };
+        },
+        watch: {
+            show (newVal) {
+                console.log("Alert is now " + (newVal ? "visible" : "hidden"));
+            }
+        },
+        methods: {
+            toggle () {
+                console.log("Toggle button clicked");
+                this.show = !this.show;
+            },
+            dismissed () {
+                console.log("Alert dismissed");
+            }
+        }
+    });
+};
 
 },{"vue":"gzxs9","bootstrap-vue":"cnRXZ","bootstrap/dist/css/bootstrap.css":"jJvnD","bootstrap-vue/dist/bootstrap-vue.css":"8UHYo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gzxs9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
