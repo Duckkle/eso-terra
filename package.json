@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-vue": "^2.23.1",
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "typescript": "^5.0.2",
+    "vue": "^3.2.47",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
