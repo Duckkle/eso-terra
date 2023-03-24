@@ -7,9 +7,11 @@
     "jquery": "^3.6.4",
     "parcel": "^2.8.3",
     "portal-vue": "2.1.7",
-    "vue": "2.6.12"
+    "typescript": "^5.0.2",
+    "vue": "^3.2.47"
   },
   "devDependencies": {
+    "@parcel/transformer-vue": "2.8.3",
     "process": "^0.11.10"
   },
   "scripts": {
