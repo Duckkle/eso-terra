@@ -1,11 +1,8 @@
 {
   "dependencies": {
-    "bootstrap": "^5.2.3",
     "bootstrap-vue": "^2.23.1",
-    "node.js": "^0.0.1-security",
     "parcel": "^2.8.3",
-    "vue": "^3.2.47",
-    "yarn": "^1.22.19"
+    "vue": "^3.2.47"
   },
   "devDependencies": {
     "process": "^0.11.10"
