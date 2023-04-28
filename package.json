@@ -1,21 +1,24 @@
 {
-  "dependencies": {
-    "@popperjs/core": "^2.11.6",
-    "@vue/runtime-dom": "^3.2.47",
-    "bootstrap": "4.6.1",
-    "bootstrap-vue": "2.23.0",
-    "jquery": "^3.6.4",
-    "parcel": "^2.8.3",
-    "portal-vue": "2.1.7",
-    "typescript": "^5.0.2",
-    "vue": "^3.2.47"
-  },
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.ts",
+  "author": "me :)",
+  "license": "Greer",
   "devDependencies": {
-    "@parcel/transformer-vue": "2.8.3",
-    "process": "^0.11.10"
+    "@vue/component-compiler-utils": "^2.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.9.1",
+    "posthtml": "^0.11.3",
+    "tslint": "^5.10.0",
+    "typescript": "^2.9.2",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-property-decorator": "^6.1.0",
+    "vue-template-compiler": "^2.5.16"
   },
-  "scripts": {
-    "build": "vue-cli-service build",
-    "serve": "vue-cli-service serve"
+  "dependencies": {
+    "vue": "^2.5.16"
   }
 }
