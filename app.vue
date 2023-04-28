@@ -1,13 +1,8 @@
 <template>
-  <div>Hello {{ name }}!</div>
+  <div id="app">
+    <header>foo</header>
+    <div>{{ 1 + 41 }}</div>
+  </div>
 </template>
 
-<script>
-  export default {
-    data() {
-      return {
-        name: "Vue",
-      };
-    },
-  };
-</script>
+
