@@ -21,6 +21,11 @@ const router = createRouter({
       path: '/waltuh',
       name: 'waltuh',
       component: () => import('../views/Waltuh.vue')
+    },
+    {
+      path: '/character-sheet',
+      name: 'character-sheet',
+      component: () => import('../views/character-sheet.vue')
     }
   ]
 })

@@ -1,41 +1,55 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img
-      class="logo"
-      alt="Waltuh"
-      src="https://i.etsystatic.com/20335141/r/il/c51cb4/2920989611/il_fullxfull.2920989611_k5hh.jpg"
-      width="525"
-      height="125"
-    />
+  <div class="flex-container">
+    <div class="left-container">
+      <header>
+        <img
+          class="logo"
+          alt="Waltuh"
+          src="https://i.etsystatic.com/20335141/r/il/c51cb4/2920989611/il_fullxfull.2920989611_k5hh.jpg"
+          width="325"
+          height="125"
+        />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/waltuh">Waltuh</RouterLink>
-      </nav>
+        <div class="wrapper">
+          <HelloWorld msg="🧈🐕" />
+          <nav>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+            <RouterLink to="/waltuh">Waltuh</RouterLink>
+            <RouterLink to="/character-sheet">Character sheet</RouterLink>
+          </nav>
+        </div>
+      </header>
     </div>
-  </header>
 
-  <RouterView />
+    <div class="right-container">
+      <RouterView />
+    </div>
+  </div>
 </template>
 
 <style scoped>
+.flex-container {
+  display: flex;
+}
+
+.left-container {
+  flex: 1;
+  background-color: #f1f1f1; /* Just for visualization */
+}
+
+.right-container {
+  flex: 2;
+  background-color: #d38f8f; /* Just for visualization */
+}
+
 header {
   line-height: 1.5;
-  max-height: 100vh;
 }
 
 .logo {
   display: block;
-  margin-right: 2cm;
+  margin-bottom: 1cm;
 }
 
 nav {
@@ -64,17 +78,33 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1024px) {
+  .flex-container {
+    flex-direction: row;
+  }
+
+  .left-container {
+    flex: 1;
+    order: 1; /* Change the order of left container to 1 */
+  }
+
+  .right-container {
+    flex: 2;
+    order: 2; /* Change the order of right container to 2 */
+  }
+
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    display: flex-start;
+    flex-direction: column;
+    place-items: left;
+    padding-right: 1rem;
+    margin-top: 2rem;
   }
 
   .logo {
-    margin: 5 5 5 5;
+    margin: 5px;
   }
 
-  header .wrapper {
+  .wrapper {
     display: flex;
     place-items: flex-start;
     flex-wrap: wrap;
@@ -84,7 +114,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
