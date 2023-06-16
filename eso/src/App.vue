@@ -5,7 +5,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img
+      class="logo"
+      alt="Waltuh"
+      src="https://i.etsystatic.com/20335141/r/il/c51cb4/2920989611/il_fullxfull.2920989611_k5hh.jpg"
+      width="525"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -13,6 +19,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/waltuh">Waltuh</RouterLink>
       </nav>
     </div>
   </header>
@@ -28,7 +35,7 @@ header {
 
 .logo {
   display: block;
-  margin: 0 auto 2rem;
+  margin-right: 2cm;
 }
 
 nav {
@@ -64,7 +71,7 @@ nav a:first-of-type {
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    margin: 5 5 5 5;
   }
 
   header .wrapper {
